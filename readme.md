@@ -53,6 +53,9 @@ La funció ```show``` mostra el graf per terminal represenant els nodes com a pu
 
 La funció ```plot``` pinta sobre un mapa les estacions i els nodes com a punts negres i les arestes que els uneixen depenent del tipus d'aresta. Si és una aresta de tipus *```tram```*, com representa una línia de metro, és pintada amb el color de la línia. Si l'aresta connecta una estació amb una altra amb mateix nom, és a dir una aresta de tipus *```enllaç```*, o una estació amb un accéss, una aresta de tipus *```access```*, les pinta de color negre.
 
+<p float="left">
+  <img src="metro.png" width="300" />
+</p>
 
 ## City
 
@@ -95,8 +98,6 @@ Com al mòdul ```metro```, implementem de manera idèntica les funcions ```show`
 #### Display de un path
 
 Aquesta funció guarda un mapa de la ruta entre dues coordenades seguint el camí més rapid. Per fer-ho, primer connectem la coordenada d'inici, la ```src```, amb el seu node més proper. Després anem iterant per la llista de nodes de ```path``` i els anem connectant amb línies. El ```color``` d'aquestes línies depenen del tipus d'aresta: si són arestes de tipus *```street```*, *```enllaç```*, o *```accés```* són pintades de color negre. Si són de tipus *```tram```*, es pinten del color de la línia per tal que l'usuari que utilitza el ```bot``` sàpiga quina línia agafar per anar a un restaurant.
-
-![Representació del metro_graph]("metro.png")
 
 ## Bot
 
